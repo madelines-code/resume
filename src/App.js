@@ -1,12 +1,22 @@
 import './App.css';
+import {useState, useEffect} from 'react'
+import Navbar from './Navbar';
+import { Routes, Route } from 'react-router';
+import Resume from './Resume';
+import Portfolio from './Portfolio';
+import Home from './Home';
 
 function App() {
+
   return (
-    <div className="App">
-      <h1>About Madeline</h1>
-      <h2>Work History</h2>
-      <h3>Marketing Coordinator</h3>
-      <p>Worked here at the county</p>
+    <div className="App"> 
+    <Navbar/>
+    <Home/>
+    <Routes>
+    <Route path="/resume" element={<Resume />}/>
+    <Route path="/portfolio" element={<Portfolio />}/>
+    <Route path="/home" element={<Home />}/>
+    </Routes>
     </div>
   );
 }
