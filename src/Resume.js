@@ -1,11 +1,12 @@
 const Resume = () => {
 return (
   <div>
-<h1>About James Y.</h1>
+<h1>Work History</h1>
 
-<h2>work history</h2>
-
-<h3>Paper boy</h3>
+<h3>DEVPOINT LABS</h3>
+<h3>Full-Time Student</h3>
+<h3>NOV 2021 - FEB 2022</h3>
+<h3>Salt Lake City, UT</h3>
 <p>work as paper boy 5 years</p>
 
 <h3>Buser</h3>
