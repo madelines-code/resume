@@ -53,18 +53,32 @@ code {
 }
 .devProjectsContainer {
   display: flex; 
-  flex-direction: row;
-  
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 40vw;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 5px;
+}
+.devProjectsContainer:hover {
+  border:3px solid rgb(0, 0, 0);
 }
 
-.devProjects {
-  color: rgb(80, 80, 80);
+.devProjectsBoxes {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .imageContainer {
   position: relative;
   width: 100%;
   max-width: 400px;
+  align-self: center;
+  padding: 10px;
 }
 
 .imageContainer:hover .overlay {
@@ -115,4 +129,55 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   z-index:100;
+}
+
+
+.homepage {
+  background-image: url('https://images.pexels.com/photos/1367179/pexels-photo-1367179.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  width: 100%;
+
+}
+
+.homeHeader {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.devProjects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.jobDots {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: salmon;
+  margin: 10px;
+}
+.jobDotsBox {
+  display: flex;
+  flex-direction: row;
+}
+.jobsSlider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: salmon;
+}
+.jobBullets {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
