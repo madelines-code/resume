@@ -13,7 +13,7 @@ export default class MenuExampleBasic extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu >
+      <Menu className='navigation'>
            <Menu.Item
           as={Link} to="/home"
           name='home'
