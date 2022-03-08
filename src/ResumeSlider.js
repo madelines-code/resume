@@ -1,4 +1,6 @@
+import React, { Component } from 'react'
 import { useState } from "react/cjs/react.development"
+import { List, Transition } from "semantic-ui-react"
 
 const ResumeSlider = () => {
   const [id, setId] = useState(1)
@@ -45,12 +47,13 @@ const renderSlider = (id) => {
     return description.map((b)=>{
       console.log(`${b}`)
       return(
-        <li>{b}</li>)
+        <li style={{textAlign: 'left'}}>{b}</li>)
     })
     }
   
   return pastJobs.map((j)=> { if (j.id === id) {
     return (
+
       <div className='jobsSlider' key={j.id}>
         <h3>{j.company}, {j.title}</h3>
         <h3>{j.dates}, {j.location}</h3>
@@ -58,6 +61,7 @@ const renderSlider = (id) => {
         {renderDescription(j.description)}
       </div>
       </div>
+
       )
   }
     
@@ -66,16 +70,18 @@ const renderSlider = (id) => {
 
 
 return (
-  <>
-  <div className='jobDotsBox'>
+  <div className='resume'>
+  <div >
+    <h2>Where I've Worked</h2>
+    <div className='jobDotsBox'>
     <div className='jobDots' onClick={()=>setId(1)}></div>
     <div className='jobDots' onClick={()=>setId(2)}></div>
     <div className='jobDots' onClick={()=>setId(3)}></div>
     <div className='jobDots' onClick={()=>setId(4)}></div>
+    </div>
   </div>
   {renderSlider(id)}
-  <p>This is where jobs go</p>
-  </>
+  </div>
 )
 }
 

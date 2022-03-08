@@ -10,24 +10,24 @@ const Home = () => {
 <>
   <div className='homepage'>
     <div className='homeHeader'>
-        <h1  i>Madeline Armstrong</h1>
-        <h3  >Full-Stack Developer</h3>
-        <h4  >Oh, the possibilities</h4>
+        <h1 style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '8vw'}}>Madeline Armstrong</h1>
+        <h3 style={{fontFamily: 'Urbanist', lineHeight: '1px', fontSize: '3vw'}} >Full-Stack Developer</h3>
+        <h4 style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '5vw'}} >Oh, the possibilities</h4>
         <p>Breaking into tech is my way of changing the landscape of life. 
         More efficient, simply designed, and aestetically peaceful tools will exist because
         of me.</p>
-        <p>In 11 weeks, I have learned to build web applications using a full stack of technology.
-        I can only imagine what I'll do with next 11 years, and who will join me.
+        <p>In 11 weeks, I have learned to build web applications using full stack deveoplment.
+        I look forward to seeing what I'll do with next 11 years, and who will join me.
         </p>
         </div>
       
       <div className='devProjects'>
       <h2 >Development Projects</h2>
-      <div className='devProjectsBoxes'>
+      <div className='devProjectsBoxes' >
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
               <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646590281/PSA_Image_lcygha.png'  style={{border: '1px solid lightgray'}}/>
-              <div className='overlay'><button>Visit Website</button></div>
+              <div className='overlay'><button className='devButton'>Visit Website</button></div>
             </div>
         
             <h4>PSA-10</h4>
@@ -36,10 +36,10 @@ const Home = () => {
               <p><strong>Responsible for: </strong> showcases, overview and update sections and CSS throughout</p>
               
           </div>
-            <div className='devProjectsContainer' >
+            <div className='devProjectsContainer' style={{alignSelf: 'center'}}>
               <div className='imageContainer'>
-              <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646590281/PSA_Image_lcygha.png'  style={{border: '1px solid lightgray'}}/>
-              <div className='overlay'><button>Visit Website</button></div>
+                <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
+                <div className='overlay'><button className='devButton'>Visit Website</button></div>
               </div>
                 <h4>Park Hop</h4>
                 <p>
@@ -54,9 +54,13 @@ const Home = () => {
     <div>
       <h2>Design Portfolio</h2>
     </div>
-   
+    <div>
+      
       <ResumeSlider/>
- 
+      </div>
+      <div>
+      <h2>Contact</h2>
+      </div>
     </div>
 </>
 
