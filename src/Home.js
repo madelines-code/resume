@@ -10,15 +10,16 @@ const Home = () => {
 <>
   <div className='homepage'>
     <div className='homeHeader'>
-        <h1 style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '8vw'}}>Madeline Armstrong</h1>
-        <h3 style={{fontFamily: 'Urbanist', lineHeight: '1px', fontSize: '3vw'}} >Full-Stack Developer</h3>
-        <h4 style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '5vw'}} >Oh, the possibilities</h4>
-        <p>Breaking into tech is my way of changing the landscape of life. 
+        <h1 style={{fontFamily: 'Urbanist', lineHeight: '1px', fontSize: '6vh', margin: '0px'}}>Madeline Armstrong</h1>
+        <h3 style={{fontFamily: 'Urbanist', lineHeight: '1vh', fontSize: '2.5vh', margin: '20px 0px 0px 0px'}} >Full-Stack Developer</h3>
+        <h4 style={{fontFamily: 'Urbanist', lineHeight: '1vh', fontSize: '4vh'}} >Oh, the possibilities</h4>
+        <div className= 'homeHeaderP'>
+        <p className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1.3em', fontSize: '2vh'}}>Breaking into tech is my way of changing the landscape of life. 
         More efficient, simply designed, and aestetically peaceful tools will exist because
-        of me.</p>
-        <p>In 11 weeks, I have learned to build web applications using full stack deveoplment.
+        of me. In 11 weeks, I have learned to build web applications using full stack deveoplment.
         I look forward to seeing what I'll do with next 11 years, and who will join me.
         </p>
+        </div>
         </div>
       
       <div className='devProjects'>
@@ -26,17 +27,31 @@ const Home = () => {
       <div className='devProjectsBoxes' >
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
-              <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646590281/PSA_Image_lcygha.png'  style={{border: '1px solid lightgray'}}/>
+              <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1649618355/PSA_Image_sffsz4.png'  style={{border: '1px solid lightgray'}}/>
               <div className='overlay'><button className='devButton'>Visit Website</button></div>
             </div>
-        
+            <div className='textArea'>
             <h4>PSA-10</h4>
               <p>A place where collectors can meet and showcase their physical collections digitally. </p>
               <p><strong>Tools:</strong> REACT, SQL, Ruby on Rails, Javasript, CSS, HTML, Trello, Figma, Github, Material UI, & VS Code.</p>
               <p><strong>Responsible for: </strong> showcases, overview and update sections and CSS throughout</p>
-              
+              </div>
           </div>
-            <div className='devProjectsContainer' style={{alignSelf: 'center'}}>
+
+          <div className='devProjectsContainer'>
+            <div className='imageContainer'>
+              <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
+              <div className='overlay'><button className='devButton'>Visit Website</button></div>
+            </div>
+            <div className='textArea'>
+              <h4>Park Hop</h4>
+              <p>This web application, being built for the Greenville County Parks & Rec Dept., brings a summer-long scavenger hunt online in an easy to use format. </p>
+              <p><strong>Tools:</strong> REACT, SQL, Ruby on Rails, Javasript, CSS, HTML, Trello, Figma, Github, Material UI, & VS Code.</p>
+              <p><strong>Responsible for: </strong> showcases, overview and update sections and CSS throughout</p>
+            </div>
+          </div>
+
+            {/* <div className='devProjectsContainer'>
               <div className='imageContainer'>
                 <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
                 <div className='overlay'><button className='devButton'>Visit Website</button></div>
@@ -47,7 +62,7 @@ const Home = () => {
                 </p>
                 <p><strong>Tools:</strong> REACT, SQL, Ruby on Rails, Javasript, CSS, HTML, Trello, Figma, Github, Semantic UI, & VS Code.</p>
                 <p><strong>Responsible for: </strong> entire application</p>
-            </div>
+            </div> */}
         </div>
       </div>
   
