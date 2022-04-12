@@ -59,9 +59,8 @@ const Home = () => {
       <Portfolio/>
     </div>
     <div className='designPortfolioContainer'>
-      
-      <ResumeSlider/>
       </div>
+      <ResumeSlider/>
       <div>
       <h2>Contact</h2>
       </div>
