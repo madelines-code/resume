@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import ResumeSlider from './ResumeSlider';
 import Portfolio from './Portfolio';
 
@@ -26,7 +26,7 @@ const Home = () => {
       <div className='devProjectsBoxes' style={{minWidth: '250px'}}>
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
-              <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1649618355/PSA_Image_sffsz4.png'  style={{border: '1px solid lightgray'}}/>
+              <img className='projectImage' alt='PSA10 screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1649618355/PSA_Image_sffsz4.png'  style={{border: '1px solid lightgray'}}/>
               <div className='overlay'><button className='devButton'>Visit Website</button></div>
             </div>
             <div className='textArea'>
@@ -39,7 +39,7 @@ const Home = () => {
 
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
-              <img className='projectImage' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
+              <img className='projectImage' alt='Park Hop' screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
               <div className='overlay'><button className='devButton'>Visit Website</button></div>
             </div>
             <div className='textArea'>
