@@ -46,13 +46,12 @@ const renderSlider = (id) => {
     return description.map((b)=>{
       console.log(`${b}`)
       return(
-        <li style={{textAlign: 'left', lineHeight: '1.5rem', margin: '0px'}}>{b}</li>)
+        <li key={b} style={{textAlign: 'left', lineHeight: '1.5rem', margin: '0px'}}>{b}</li>)
     })
     }
   
-  return pastJobs.map((j)=> { if (j.id === id) {
+  return pastJobs.map((j)=> {if (j.id === id) {
     return (
-
       <div className='jobsSlider' key={j.id}>
         <h3 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1rem', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.company}, {j.title}</h3>
         <h4 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1rem', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.dates}, {j.location}</h4>
@@ -60,10 +59,8 @@ const renderSlider = (id) => {
         {renderDescription(j.description)}
       </div>
       </div>
-
       )
   }
-    
   })
 }
 
