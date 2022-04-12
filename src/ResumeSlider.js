@@ -47,7 +47,7 @@ const renderSlider = (id) => {
     return description.map((b)=>{
       console.log(`${b}`)
       return(
-        <li style={{textAlign: 'left'}}>{b}</li>)
+        <li style={{textAlign: 'left', lineHeight: '1.5rem', margin: '0px'}}>{b}</li>)
     })
     }
   
@@ -55,8 +55,8 @@ const renderSlider = (id) => {
     return (
 
       <div className='jobsSlider' key={j.id}>
-        <h3>{j.company}, {j.title}</h3>
-        <h3>{j.dates}, {j.location}</h3>
+        <h3 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1rem', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.company}, {j.title}</h3>
+        <h4 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1rem', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.dates}, {j.location}</h4>
         <div className='jobBullets'>
         {renderDescription(j.description)}
       </div>
@@ -72,7 +72,7 @@ const renderSlider = (id) => {
 return (
   <div className='resume'>
   <div >
-    <h2>Where I've Worked</h2>
+    <h2 style={{fontFamily: 'Urbanist', lineHeight: '1px', margin: '40px'}}>Where I've Worked</h2>
     <div className='jobDotsBox'>
     <div className='jobDots' onClick={()=>setId(1)}></div>
     <div className='jobDots' onClick={()=>setId(2)}></div>
