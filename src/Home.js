@@ -39,7 +39,7 @@ const Home = () => {
 
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
-              <img className='projectImage' alt='Park Hop' screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
+              <img className='projectImage' alt='Park Hop screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
               <div className='overlay'><button className='devButton'>Visit Website</button></div>
             </div>
             <div className='textArea'>
