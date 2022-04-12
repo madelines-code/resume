@@ -59,7 +59,7 @@ const Home = () => {
       <Portfolio/>
     </div>
     <div className='designPortfolioContainer'>
-      {/* <ResumeSlider/> */}
+      <ResumeSlider/>
       </div>
       <div>
       <h2>Contact</h2>

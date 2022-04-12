@@ -49,7 +49,6 @@ const renderSlider = (id) => {
         <li key={b} style={{textAlign: 'left', lineHeight: '1.5rem', margin: '0px'}}>{b}</li>)
     })
     }
-  
   return pastJobs.map((j)=> {if (j.id === id) {
     return (
       <div className='jobsSlider' key={j.id}>
@@ -59,8 +58,9 @@ const renderSlider = (id) => {
         {renderDescription(j.description)}
       </div>
       </div>
-      )
-  }
+      )} else {
+        return ("")
+      }
   })
 }
 
