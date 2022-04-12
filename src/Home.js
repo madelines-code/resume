@@ -1,6 +1,4 @@
 import React, { useRef } from 'react';
-import { Parallax, ParallaxLayer} from '@react-spring/parallax'
-import { Button, Card, Image } from 'semantic-ui-react';
 import ResumeSlider from './ResumeSlider';
 import Portfolio from './Portfolio';
 

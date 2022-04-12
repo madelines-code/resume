@@ -1,5 +1,4 @@
 import './App.css';
-import {useState, useEffect} from 'react'
 import Navbar from './Navbar';
 import { Routes, Route } from 'react-router';
 import Resume from './Resume';

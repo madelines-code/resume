@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useState } from "react/cjs/react.development"
-import { List, Transition } from "semantic-ui-react"
 
 const ResumeSlider = () => {
   const [id, setId] = useState(1)
