@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Image } from 'semantic-ui-react'
-import Arrowbullets from '/Users/Madeline/Desktop/dpl_winter_2021/week9/resume/src/bullets.svg'
+import Arrowbullets from './bullets.svg'
 
 const ResumeSlider = () => {
   const [id, setId] = useState(1)
