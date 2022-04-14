@@ -27,14 +27,32 @@ code {
 }
 
 .designPortfolioContainer {
-  height: 100%;
+  /* height: 100%; */
   color: #DBC8B6;
-  margin: 0px 95px;
-  min-width: 300px;;
+  /* margin: 0px 95px; */
+  min-width: 300px;
+  min-height: 100vh;
+  padding: 40px 0px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  align-content: space-around;
+  flex-direction: column;
+}
+
+.resumeContainer {
+  /* padding: 100px 0px; */
+  /* height: 100%; */
+  color: #DBC8B6;
+  /* background-color: blueviolet; */
+  /* margin: 0px 95px; */
+  min-width: 300px;
+  /* min-height: 100vh; */
 }
 
 .designImgContainer {
-  min-width: 300px;
+  min-width: 200px;
   max-width: 365px;
   margin: 10px 20px 10px 20px;
   background-color: rgba(22, 81, 126, 0.3);
@@ -45,11 +63,6 @@ code {
 @media only screen and (max-width: 500px) {.devProjectsContainer {
   margin: 0;
 }}
-
-.resumeContainer {
-  margin: 4em 10em;
-  
-}
 
 .workExperience {
   display: flex;
@@ -115,9 +128,12 @@ code {
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap; 
-  justify-content: space-around;
+  justify-content: center;
   max-width: 1370px;
-
+  align-items: center;
+  align-content: center;
+  margin-top: 0;
+  /* margin: auto; */
 }
 
 .imageContainer {
@@ -227,8 +243,52 @@ code {
   opacity: .5;
 }
 
+.contactButton {
+  display: flex;
+  flex-shrink: 1;
+  border: 1px solid white;
+  margin-top: 20px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #DBC8B6;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  background: #305E74;
+  font-size: 20px;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+.contactButton:hover,
+.contactButton:active {
+  background-color: #DBC8B6;
+  background-position: 0 0;
+  color: #366981;
+}
+
+.contactButton:active {
+  opacity: .5;
+}
+
 .navigation {
-  position:relative;
+  position: fixed;
   z-index:100;
   top:0;
   background-color:rgb(43, 153, 226);
@@ -252,6 +312,8 @@ code {
   /* background-image: url('https://images.pexels.com/photos/1367179/pexels-photo-1367179.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); */
   width: 100%;
   margin-top: -20px;
+  margin-bottom: -60px;
+  padding-bottom: 40px;
   background-color: #305E74;
 }
 
@@ -296,29 +358,27 @@ code {
 }
 
 .resume {
-  height: 100%;
+  height: 100vh;
   color: #DBC8B6;
-  margin: 95px 0px;
+  /* margin: 95px 0px; */
   min-height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .jobDots {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #DBC8B6;
   margin-right: 10px;
 }
-
-.jobDots {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #DBC8B6;
-  margin-right: 10px;
-}
-.jobDots:hover {
+.act, .jobDots:hover {
   background-color: #ADC161;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
 }
 
 
@@ -326,8 +386,11 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   width: 60em;
   margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%
 }
 .jobsSlider {
   display: flex;
@@ -337,18 +400,24 @@ code {
   /* min-height: 200px; */
   animation-duration: .75s;
   animation-name: slidein;
+  margin-left: 20%;
+  margin-right: 20%
   /* width: 80%; */
 }
 
 @keyframes slidein {
   from {
-    margin-left: 90%;
-    width: 80%;
+    /* margin-left: 90%;
+    width: 80%; */
+    transform: translateX(100%);
+    opacity: 0.25;
   }
 
   to {
-    margin-left: 20%;
-    width: 90%;
+    /* margin-left: 90%;
+    width: 100%; */
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 .jobBullets {

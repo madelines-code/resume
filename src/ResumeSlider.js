@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 const ResumeSlider = () => {
   const [id, setId] = useState(1)
+  const [dotClass, setDotClass] = useState('dot1')
 
   const pastJobs = [
     {
@@ -43,7 +44,6 @@ const ResumeSlider = () => {
 const renderSlider = (id) => {
   const renderDescription = (description) => {
     return description.map((b)=>{
-      console.log(`${b}`)
       return(
         <li key={b} style={{textAlign: 'left', lineHeight: '1.5rem', margin: '0px'}}>{b}</li>)
     })
@@ -63,16 +63,24 @@ const renderSlider = (id) => {
   })
 }
 
+const activeClass = (id) => {
+  setId(id)
+  let dot = `dot${id}`
+  setDotClass(dot)
+}
+console.log(dotClass)
+
+// {`${dotClass='dot1' ? "jobDots active" : "jobDots"}`}
 
 return (
   <div className='resume'>
   <div >
     <h2 style={{fontFamily: 'Urbanist', lineHeight: '1px', margin: '40px'}}>Where I've Worked</h2>
     <div className='jobDotsBox'>
-    <div className='jobDots' onClick={()=>setId(1)}></div>
-    <div className='jobDots' onClick={()=>setId(2)}></div>
-    <div className='jobDots' onClick={()=>setId(3)}></div>
-    <div className='jobDots' onClick={()=>setId(4)}></div>
+    <div className={dotClass == 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}></div>
+    <div className={dotClass == 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}></div>
+    <div className={dotClass == 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}></div>
+    <div className={dotClass == 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}></div>
     </div>
   </div>
   {renderSlider(id)}
