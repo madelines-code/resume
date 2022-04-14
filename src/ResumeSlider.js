@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Image } from 'semantic-ui-react'
+import Arrowbullets from '/Users/Madeline/Desktop/dpl_winter_2021/week9/resume/src/bullets.svg'
 
 const ResumeSlider = () => {
   const [id, setId] = useState(1)
@@ -45,7 +47,7 @@ const renderSlider = (id) => {
   const renderDescription = (description) => {
     return description.map((b)=>{
       return(
-        <li key={b} style={{textAlign: 'left', lineHeight: '1.5rem', margin: '0px'}}>{b}</li>)
+      <div className='bulletPoint'><Image src={Arrowbullets} style={{height: '10px', margin: '5px 10px 0px 0px'}}/><li key={b} style={{textAlign: 'left', lineHeight: '1.5rem', margin: '0px', listStyleType:'none', fontSize: '1.2rem'}}>{b}</li></div>)
     })
     }
   return pastJobs.map((j)=> {if (j.id === id) {

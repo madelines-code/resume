@@ -13,13 +13,13 @@ const Home = () => {
         <h3 style={{fontFamily: 'Urbanist', lineHeight: '1vh', fontSize: '3vh', margin: '20px 0px 0px 0px'}} >Full-Stack Developer</h3>
         <h4 style={{fontFamily: 'Urbanist', lineHeight: '1vh', fontSize: '4vh'}} >Oh, the possibilities</h4>
         <div className= 'homeHeaderP'>
-        <p className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1.3em', fontSize: '2.5vh'}}>Breaking into tech is my way of changing the landscape of life. 
+        <p className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1.3em', fontSize: '1.2em'}}>Breaking into tech is my way of changing the landscape of life. 
         More efficient, simply designed, and aestetically peaceful tools will exist because
         of me. In 11 weeks, I have learned to build web applications using full stack deveoplment.
         I look forward to seeing what I'll do with next 11 years, and who will join me.
         </p>
         </div>
-        <button className='contactButton' >Email Me</button>
+        <a href = "mailto: armstrong.madeline@gmail.com" target="_blank"><button className='contactButton' >Email Me</button></a>
         </div>
       
       <div className='devProjects' id='devprojects'>
@@ -28,7 +28,7 @@ const Home = () => {
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
               <img className='projectImage' alt='PSA10 screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1649618355/PSA_Image_sffsz4.png'  style={{border: '1px solid lightgray'}}/>
-              <div className='overlay'><button className='devButton'>Visit Website</button></div>
+              <a href=" https://psa-10.herokuapp.com/" target="_blank"><div className='overlay'><button className='devButton'>Visit Website</button></div></a>
             </div>
             <div className='textArea'>
             <h4>PSA-10</h4>
@@ -37,11 +37,11 @@ const Home = () => {
               <p><strong>Responsible for: </strong> showcases, overview and update sections and CSS throughout</p>
               </div>
           </div>
-
+         
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
               <img className='projectImage' alt='Park Hop screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
-              <div className='overlay'><button className='devButton'>Visit Website</button></div>
+              <a href="https://park-hop.herokuapp.com/" target="_blank"><div className='overlay'><button className='devButton'>Visit Website</button></div></a>
             </div>
             <div className='textArea'>
               <h4>Park Hop</h4>

@@ -33,7 +33,6 @@ code {
   min-width: 300px;
   min-height: 100vh;
   padding: 40px 0px;
-  background-color: blueviolet;
   display: flex;
   justify-content: space-around;
   align-items: space-around;
@@ -123,6 +122,12 @@ code {
   /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
 }
 
+.bulletPoint {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* margin: 5px; */
+}
 
 .devProjectsBoxes {
   display: flex; 
