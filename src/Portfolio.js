@@ -25,7 +25,7 @@ const Portfolio = () => {
     <p><strong>Greenville County Rec</strong><br/>Fun, playful design for a parks and recreation department.<br/> 
     Updated & maintained using Wordpress.
     </p>
-    <a target="_blank" href='https://greenvillerec.com/'><strong>Visit Site</strong></a>
+    <a target="_blank" rel="noreferrer" href='https://greenvillerec.com/'><strong>Visit Site</strong></a>
     </div>
     
   </div>
