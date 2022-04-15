@@ -19,7 +19,7 @@ const Home = () => {
         I look forward to seeing what I'll do with next 11 years, and who will join me.
         </p>
         </div>
-        <a href = "mailto: armstrong.madeline@gmail.com" target="_blank"><button className='contactButton' >Email Me</button></a>
+        <a href = "mailto: armstrong.madeline@gmail.com" target="_blank" rel="noreferrer"><button className='contactButton' >Email Me</button></a>
         </div>
       
       <div className='devProjects' id='devprojects'>
@@ -28,7 +28,7 @@ const Home = () => {
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
               <img className='projectImage' alt='PSA10 screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1649618355/PSA_Image_sffsz4.png'  style={{border: '1px solid lightgray'}}/>
-              <a href=" https://psa-10.herokuapp.com/" target="_blank"><div className='overlay'><button className='devButton'>Visit Website</button></div></a>
+              <a href=" https://psa-10.herokuapp.com/" target="_blank" rel="noreferrer"><div className='overlay'><button className='devButton'>Visit Website</button></div></a>
             </div>
             <div className='textArea'>
             <h4>PSA-10</h4>
@@ -41,7 +41,7 @@ const Home = () => {
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
               <img className='projectImage' alt='Park Hop screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1646754304/Park_Hop.png.png'  style={{border: '1px solid lightgray'}}/>
-              <a href="https://park-hop.herokuapp.com/" target="_blank"><div className='overlay'><button className='devButton'>Visit Website</button></div></a>
+              <a href="https://park-hop.herokuapp.com/" target="_blank" rel="noreferrer"><div className='overlay'><button className='devButton'>Visit Website</button></div></a>
             </div>
             <div className='textArea'>
               <h4>Park Hop</h4>

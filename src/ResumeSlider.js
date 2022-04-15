@@ -79,10 +79,10 @@ return (
   <div >
     <h2 style={{fontFamily: 'Urbanist', lineHeight: '1px', margin: '40px'}}>Where I've Worked</h2>
     <div className='jobDotsBox'>
-    <div className={dotClass == 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}></div>
-    <div className={dotClass == 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}></div>
-    <div className={dotClass == 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}></div>
-    <div className={dotClass == 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}></div>
+    <div className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}></div>
+    <div className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}></div>
+    <div className={dotClass === 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}></div>
+    <div className={dotClass === 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}></div>
     </div>
   </div>
   {renderSlider(id)}
