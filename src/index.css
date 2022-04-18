@@ -395,7 +395,7 @@ code {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 60em;
+  /* width: 60em; */
   margin-bottom: 20px;
   margin-left: 20%;
   margin-right: 20%
