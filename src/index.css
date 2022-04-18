@@ -315,7 +315,7 @@ code {
 
 .homepage {
   /* background-image: url('https://images.pexels.com/photos/1367179/pexels-photo-1367179.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); */
-  width: 100%;
+  width: 100vw;
   margin-top: -20px;
   margin-bottom: -60px;
   padding-bottom: 40px;
