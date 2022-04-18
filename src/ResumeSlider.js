@@ -53,8 +53,8 @@ const renderSlider = (id) => {
   return pastJobs.map((j)=> {if (j.id === id) {
     return (
       <div className='jobsSlider' key={j.id}>
-        <h3 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1rem', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.company}, {j.title}</h3>
-        <h4 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1rem', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.dates}, {j.location}</h4>
+        <h3 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1em', margin: '0px 0px 8px 0px', textAlign: 'left'}}>{j.company}, {j.title}</h3>
+        <h4 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1em', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.dates}, {j.location}</h4>
         <div className='jobBullets'>
         {renderDescription(j.description)}
       </div>

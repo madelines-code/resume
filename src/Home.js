@@ -24,7 +24,7 @@ const Home = () => {
       
       <div className='devProjects' id='devprojects'>
       <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', margin: '30px 0px 0px 0px'}}>Development Projects</h2>
-      <div className='devProjectsBoxes' style={{minWidth: '250px'}}>
+      <div className='devProjectsBoxes' style={{minWidth: '350px'}}>
           <div className='devProjectsContainer'>
             <div className='imageContainer'>
               <img className='projectImage' alt='PSA10 screenshot' src='https://res.cloudinary.com/dkkwdvec2/image/upload/v1649618355/PSA_Image_sffsz4.png'  style={{border: '1px solid lightgray'}}/>
@@ -56,7 +56,7 @@ const Home = () => {
       </div>
   
     <div className='designPortfolioContainer' id='portfolio'>
-      <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 0px 0px'}}>Design Portfolio</h2>
+      <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 20px 0px', margin: 'auto'}}>Design Portfolio</h2>
       <Portfolio/>
     </div>
     <div className='resumeContainer' id='resume'>
