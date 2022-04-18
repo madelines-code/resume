@@ -297,7 +297,7 @@ code {
   z-index:100;
   top:0;
   background-color:rgb(43, 153, 226);
-  width:100%;
+  width:100vw;
   margin: 0;
 }
 
