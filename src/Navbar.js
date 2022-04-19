@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 // import { Link } from 'react-router-dom'
-import { Menu } from 'semantic-ui-react'
+import { Icon, Menu } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
-
-
 export default class MenuExampleBasic extends Component {
   state = {}
 
@@ -14,6 +12,8 @@ export default class MenuExampleBasic extends Component {
 
     return (
       <Menu className='navigation' style={{borderRadius: '0px', justifyContent: 'right', backgroundColor: '#305E74'}}>
+      <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/madelinea/'><Icon enabled name='linkedin' size='large' style={{color:'#DBC8B6', position: 'absolute', left: '0', paddingTop:'7px', paddingLeft: '40px' }}/></a>
+      <a target="_blank" rel="noreferrer" href='https://github.com/madelines-code'><Icon enabled name='github' size='large' style={{color:'#DBC8B6', position: 'absolute', left: '0', paddingTop:'8px', paddingLeft: '70px' }}/></a>
            <Menu.Item
           as={Link} to="/home#about="
           name='home'

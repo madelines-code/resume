@@ -43,7 +43,7 @@ code {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 680px) {.designPortfolioContainer {
+@media only screen and (max-width: 2000px) {.designPortfolioContainer {
   margin: 0px 50px;
 }}
 
@@ -69,10 +69,15 @@ code {
   /* width: 40vw; */
 }
 
+@media only screen and (max-width: 1400px) {.designImgContainer {
+  max-width: 450px;
+  margin: 10px 10px 10px 10px;
+}}
+
+
 @media only screen and (max-width: 680px) {.designImgContainer {
   width: 80vw;
   margin: 10px 10px 10px 10px;
-
 }}
 
 .workExperience {
