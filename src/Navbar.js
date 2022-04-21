@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 // import { Link } from 'react-router-dom'
-import { Icon, Menu } from 'semantic-ui-react'
+import { Button, Icon, Menu } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
+import styled, { css } from "styled-components";
+
 export default class MenuExampleBasic extends Component {
   state = {}
 
@@ -12,8 +14,13 @@ export default class MenuExampleBasic extends Component {
 
     return (
       <Menu className='navigation' style={{borderRadius: '0px', justifyContent: 'right', backgroundColor: '#305E74'}}>
-      <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/madelinea/'><Icon enabled name='linkedin' size='large' style={{color:'#DBC8B6', position: 'absolute', left: '0', paddingTop:'7px', paddingLeft: '40px' }}/></a>
-      <a target="_blank" rel="noreferrer" href='https://github.com/madelines-code'><Icon enabled name='github' size='large' style={{color:'#DBC8B6', position: 'absolute', left: '0', paddingTop:'8px', paddingLeft: '70px' }}/></a>
+
+      <Button className='icon' style={{color:'#DBC8B6', position: 'absolute', left: '0', paddingTop:'8px', marginLeft: '40px',
+       background: 'none', opacity: '100' }} target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/madelinea/'>
+        <Icon class='link' enabled name='linkedin' size='large'/></Button>
+      <Button className='icon' style={{color:'#DBC8B6', position: 'absolute', left: '0', paddingTop:'8px', marginLeft: '70px',
+       background: 'none', opacity: '100' }} target="_blank" rel="noreferrer" href='https://github.com/madelines-code'>
+         <Icon class='link' enabled name='github' size='large' /></Button>
            <Menu.Item
           as={Link} to="/home#about="
           name='home'
@@ -55,6 +62,7 @@ export default class MenuExampleBasic extends Component {
     )
   }
 }
+;
 
 
 

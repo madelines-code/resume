@@ -29,6 +29,101 @@ code {
     monospace;
 }
 
+.icon {
+  transition: all .2s ease-in-out;
+  margin-left: 10px;
+}
+
+.icon:hover {
+  color:#D28068;
+  transform: scale(1.1);
+}
+
+.navigation {
+  position: sticky;
+  z-index:100;
+  top:0;
+  background-color:rgb(43, 153, 226);
+  /* width:100%; */
+  margin: 0;
+}
+
+.homepage {
+  margin-top: -20px;
+  margin-bottom: -60px;
+  padding-bottom: 40px;
+  background-color: #305E74;
+}
+
+.homeHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px 95px;
+  font-family: 'Urbanist', sans-serif;
+  margin: auto;
+  color: #DBC8B6;
+  background-size: cover;
+  background-image: url('https://res.cloudinary.com/dkkwdvec2/image/upload/v1649778612/Triangle_Accents_dxoaun.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 500px) {.homeHeader {
+  padding: 0px 50px;
+}}
+
+.headerDesc {
+  display: block;
+  text-align: left;
+}
+.contactButton {
+  display: flex;
+  flex-shrink: 1;
+  border: 1px solid white;
+  margin-top: 20px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #DBC8B6;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  background: #305E74;
+  font-size: 20px;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+.contactButton:hover,
+.contactButton:active {
+  background-color: #DBC8B6;
+  background-position: 0 0;
+  color: #366981;
+}
+
+.contactButton:active {
+  opacity: .5;
+}
+
 .designPortfolioContainer {
   /* height: 100%; */
   color: #DBC8B6;
@@ -41,22 +136,12 @@ code {
   align-items: space-around;
   align-content: space-around;
   flex-direction: column;
+  flex-shrink: 4;
 }
 
 @media only screen and (max-width: 2000px) {.designPortfolioContainer {
   margin: 0px 50px;
 }}
-
-.resumeContainer {
-  /* padding: 100px 0px; */
-  /* height: 100%; */
-  color: #DBC8B6;
-  /* background-color: blueviolet; */
-  /* margin: 0px 95px; */
-  min-width: 300px;
-  text-align: center;
-  /* min-height: 100vh; */
-}
 
 .designImgContainer {
   min-width: 200px;
@@ -80,18 +165,12 @@ code {
   margin: 10px 10px 10px 10px;
 }}
 
-.workExperience {
-  display: flex;
-  flex-direction: row;
+.links {
+  color:#D28068; 
 }
 
-.job {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-basis: 50%;
-  flex: 1;
-  align-items: flex-start;
-
+.links:hover {
+  color:#e4dad0; 
 }
 
 .dates {
@@ -138,19 +217,13 @@ code {
   margin-bottom: 0;
 }}
 
-.bulletPoint {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  /* margin: 5px; */
-}
+
 
 .devProjectsBoxes {
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap; 
   justify-content: center;
-  max-width: 1370px;
   align-items: center;
   align-content: center;
   margin-top: 0;
@@ -265,113 +338,6 @@ code {
   opacity: .5;
 }
 
-.contactButton {
-  display: flex;
-  flex-shrink: 1;
-  border: 1px solid white;
-  margin-top: 20px;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: #DBC8B6;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Urbanist', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
-  min-height: 40px;
-  outline: 0;
-  padding: 12px 14px;
-  text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  background: #305E74;
-  font-size: 20px;
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  text-align: center;
-}
-
-.contactButton:hover,
-.contactButton:active {
-  background-color: #DBC8B6;
-  background-position: 0 0;
-  color: #366981;
-}
-
-.contactButton:active {
-  opacity: .5;
-}
-
-.navigation {
-  position: sticky;
-  z-index:100;
-  top:0;
-  background-color:rgb(43, 153, 226);
-  /* width:100%; */
-  margin: 0;
-}
-
-.footer {
-  background-color: #305E74;
-  color: white;
-  bottom: 0;
-  padding: 30px 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  z-index:100;
-}
-
-
-.homepage {
-  /* background-image: url('https://images.pexels.com/photos/1367179/pexels-photo-1367179.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); */
-  /* width: 100%; */
-  margin-top: -20px;
-  margin-bottom: -60px;
-  padding-bottom: 40px;
-  background-color: #305E74;
-}
-
-.homeHeader {
-  /* height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center; */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding: 0px 95px;
-  font-family: 'Urbanist', sans-serif;
-  max-width: 1370px;
-  margin: auto;
-  color: #DBC8B6;
-  background-size: cover;
-  background-image: url('https://res.cloudinary.com/dkkwdvec2/image/upload/v1649778612/Triangle_Accents_dxoaun.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-@media only screen and (max-width: 500px) {.homeHeader {
-  padding: 0px 50px;
-
-}}
-
-.headerDesc {
-  display: block;
-  text-align: left;
-}
 
 .devProjects {
   min-height: 100vh;
@@ -382,6 +348,16 @@ code {
   align-items: center;
   background-color: #DBC8B6;
   padding: 20px 0px
+}
+.resumeContainer {
+  /* padding: 100px 0px; */
+  /* height: 100%; */
+  color: #DBC8B6;
+  /* background-color: blueviolet; */
+  /* margin: 0px 95px; */
+  min-width: 300px;
+  text-align: center;
+  /* min-height: 100vh; */
 }
 
 .resume {
@@ -402,7 +378,7 @@ code {
   margin-right: 10px;
 }
 .act, .jobDots:hover {
-  background-color: #ADC161;
+  background-color: #D28068;
   cursor: pointer;
   width: 18px;
   height: 18px;
@@ -431,6 +407,12 @@ code {
   margin-left: 20%;
   margin-right: 20%
 }
+.bulletPoint {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* margin: 5px; */
+}
 
 @media only screen and (max-width: 500px) {.jobsSlider {
   margin-left: 10%;
@@ -456,4 +438,15 @@ code {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.footer {
+  background-color: #305E74;
+  color: white;
+  bottom: 0;
+  padding: 30px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index:100;
 }
