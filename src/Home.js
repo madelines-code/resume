@@ -15,7 +15,7 @@ const Home = () => {
         <h4 className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '4vh', margin: '5px 0px 5px 0px'}} >Oh, the possibilities</h4>
         <div className= 'homeHeaderP'>
         <p className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1.3em', fontSize: '1.2em'}}>Breaking into tech is my way of changing the landscape of life. 
-        More efficient, simply designed, and aestetically peaceful tools will exist because
+        More efficient, simply designed, and aesthetically peaceful tools will exist because
         of me. In 11 weeks, I have learned to build web applications using full stack deveoplment.
         I look forward to seeing what I'll do with next 11 years, and who will join me.
         </p>
@@ -31,7 +31,7 @@ const Home = () => {
       </div>
   
     <div className='designPortfolioContainer' id='portfolio'>
-      <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 20px 0px', margin: 'auto'}}>Design Portfolio</h2>
+      <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 40px 0px', margin: 'auto'}}>Design Portfolio</h2>
       <Portfolio/>
     </div>
     <div className='resumeContainer' id='resume'>
