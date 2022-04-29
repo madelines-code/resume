@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 // import { Link } from 'react-router-dom'
 import { Button, Icon, Menu } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
-import styled, { css } from "styled-components";
 
 export default class MenuExampleBasic extends Component {
   state = {}
