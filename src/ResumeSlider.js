@@ -58,7 +58,7 @@ const renderSlider = (id) => {
     }
   return pastJobs.map((j)=> {if (j.id === id) {
     return (
-      <div data-aos="fade" className='jobsSlider' key={j.id}>
+      <div className='jobsSlider' key={j.id}>
         <h3 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1em', margin: '0px 0px 8px 0px', textAlign: 'left'}}>{j.company}, {j.title}</h3>
         <h4 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1em', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.dates}, {j.location}</h4>
         <div className='jobBullets'>
@@ -86,10 +86,10 @@ return (
     <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 40px 0px', margin: 'auto'}}>Where I've Worked</h2>
     <div className='jobScrollArea'>
       <div className='jobDotsBox'>
-      <div className={dotClass === 'dot1' ? 'act border' : 'border'}><p className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}>DEVPOINT</p></div>
-      <div className={dotClass === 'dot2' ? 'act border' : 'border'}><p className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}>FREELANCE</p></div>
-      <div className={dotClass === 'dot3' ? 'act border' : 'border'}><p className={dotClass === 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}>GREENVILLE COUNTY</p></div>
-      <div className={dotClass === 'dot4' ? 'act border' : 'border'}><p className={dotClass === 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}>RED CROSS</p></div>
+      <div className={dotClass === 'dot1' ? 'act border bg' : 'border'}><p className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}>DEVPOINT</p></div>
+      <div className={dotClass === 'dot2' ? 'act border bg' : 'border'}><p className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}>FREELANCE</p></div>
+      <div className={dotClass === 'dot3' ? 'act border bg' : 'border'}><p className={dotClass === 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}>GREENVILLE COUNTY</p></div>
+      <div className={dotClass === 'dot4' ? 'act border bg' : 'border'}><p className={dotClass === 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}>RED CROSS</p></div>
       </div>
       {renderSlider(id)}
       </div>
