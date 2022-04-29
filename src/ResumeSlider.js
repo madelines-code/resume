@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import { Image } from 'semantic-ui-react'
 import Arrowbullets from './bullets.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ResumeSlider = () => {
   const [id, setId] = useState(1)
   const [dotClass, setDotClass] = useState('dot1')
+
+  useEffect(()=> {
+    AOS.init({duration: 3000});
+  }, []);
 
   const pastJobs = [
     {
@@ -52,7 +58,7 @@ const renderSlider = (id) => {
     }
   return pastJobs.map((j)=> {if (j.id === id) {
     return (
-      <div className='jobsSlider' key={j.id}>
+      <div data-aos="fade" className='jobsSlider' key={j.id}>
         <h3 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1em', margin: '0px 0px 8px 0px', textAlign: 'left'}}>{j.company}, {j.title}</h3>
         <h4 className='jobBullets' style={{fontFamily: 'Urbanist', lineHeight: '1em', margin: '0px 0px 5px 0px', textAlign: 'left'}}>{j.dates}, {j.location}</h4>
         <div className='jobBullets'>
@@ -76,16 +82,18 @@ console.log(dotClass)
 
 return (
   <div className='resume'>
-  <div >
-    <h2 style={{fontFamily: 'Urbanist', lineHeight: '1px', margin: '40px'}}>Where I've Worked</h2>
-    <div className='jobDotsBox'>
-    <div className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}></div>
-    <div className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}></div>
-    <div className={dotClass === 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}></div>
-    <div className={dotClass === 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}></div>
+  <div data-aos="fade" >
+    <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 40px 0px', margin: 'auto'}}>Where I've Worked</h2>
+    <div className='jobScrollArea'>
+      <div className='jobDotsBox'>
+      <div className={dotClass === 'dot1' ? 'act border' : 'border'}><p className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}>DEVPOINT</p></div>
+      <div className={dotClass === 'dot2' ? 'act border' : 'border'}><p className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}>FREELANCE</p></div>
+      <div className={dotClass === 'dot3' ? 'act border' : 'border'}><p className={dotClass === 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}>GREENVILLE COUNTY</p></div>
+      <div className={dotClass === 'dot4' ? 'act border' : 'border'}><p className={dotClass === 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}>RED CROSS</p></div>
+      </div>
+      {renderSlider(id)}
+      </div>
     </div>
-  </div>
-  {renderSlider(id)}
   </div>
 )
 }
