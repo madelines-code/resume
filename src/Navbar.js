@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
-import { Button, Grid, GridColumn, GridRow, Icon, Menu } from 'semantic-ui-react'
+import { Icon, Menu } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default class MenuExampleBasic extends Component {
