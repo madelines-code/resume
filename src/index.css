@@ -3,6 +3,7 @@
   font-family: 'Urbanist', sans-serif;
   /* width: 100% !important; */
   margin: 0px;
+  
 }
 body {
   margin: 0px;
@@ -12,6 +13,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100% !important;
+}
+
+.wholeSite {
+  background-color: #305E74;
 }
 h1 {
   font-family: 'Urbanist', sans-serif
@@ -31,12 +36,21 @@ code {
 
 .icon {
   transition: all .2s ease-in-out;
-  margin-left: 10px;
 }
 
 .icon:hover {
-  color:#D28068;
+  color:#D28068 !important;
   transform: scale(1.1);
+}
+
+
+.navButton {
+  transition: all .2s ease-in-out;
+  margin-left: 10px;
+}
+
+.navButton:hover {
+  color:#D28068 !important;  
 }
 
 .navigation {
@@ -44,8 +58,12 @@ code {
   z-index:100;
   top:0;
   background-color:rgb(43, 153, 226);
-  /* width:100%; */
-  margin: 0;
+  justify-content: right;
+  /* margin: 0; */
+}
+
+.navigation:hover {
+  color:#D28068; 
 }
 
 .homepage {
@@ -72,7 +90,7 @@ code {
   background-attachment: fixed;
 }
 
-@media only screen and (max-width: 500px) {.homeHeader {
+@media only screen and (max-width: 700px) {.homeHeader {
   padding: 0px 50px;
 }}
 
@@ -129,13 +147,13 @@ code {
   color: #DBC8B6;
   margin: 0px 95px;
   min-width: 300px;
-  /* min-height: 100vh; */
   padding: 40px 0px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  /* align-items: space-around;
-  align-content: space-around; */
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-shrink: 4;
 }
 
@@ -197,7 +215,7 @@ code {
   flex-shrink: 4;
   background-color: #e4dad0;
   width: 40vw;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   align-items: center;
   text-align: center;
@@ -281,6 +299,7 @@ code {
 
 .textArea {
   margin: 10px 0px;
+  min-height: 145px;
 }
 
 @media only screen and (min-width: 1425px) {.textArea {
@@ -368,14 +387,23 @@ code {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-size: cover;
+  background-image: url('https://res.cloudinary.com/dkkwdvec2/image/upload/v1649778612/Triangle_Accents_dxoaun.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-top: 4px solid rgba(14, 51, 80, 0.3);;
 }
+
+
 
 .jobScrollArea {
   display: flex;
   flex-direction: row;
-  
 }
-
+@media only screen and (max-width: 700px) {.jobScrollArea {
+  display: flex;
+  flex-direction: column;
+}}
 .jobDots {
   /* height: 15px; */
   /* background-color: #DBC8B6; */
@@ -383,6 +411,7 @@ code {
   margin-right: 10px;
   padding-bottom: 5px;
 }
+
 .act, .jobDots:hover {
   color: #D28068;
   cursor: pointer;
@@ -418,6 +447,14 @@ code {
   padding-left: 10px;
   border-left: 2px solid #D28068;
 }
+
+@media only screen and (max-width: 700px) {.jobDotsBox {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}}
+
 .jobsSlider {
   display: flex;
   justify-content: flex-start;
@@ -438,10 +475,14 @@ code {
   /* margin: 5px; */
 }
 
-@media only screen and (max-width: 500px) {.jobsSlider {
+@media only screen and (max-width: 700px) {.jobsSlider {
   margin-left: 10%;
   margin-right: 10%
 }}
+@media only screen and (max-width: 1200px) {.jobsSlider {
+  min-height: 400px;
+}}
+
 
 @keyframes slidein {
   from {
@@ -465,10 +506,12 @@ code {
 }
 
 .footer {
-  background-color: #305E74;
+  background-color: rgba(14, 51, 80, 0.3);
   color: white;
   bottom: 0;
-  padding: 30px 80px;
+  margin-top: 20px;
+  padding: 20px 0px;
+  /* margin-bottom: 40px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

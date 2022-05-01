@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import { Link } from 'react-router-dom'
-import { Button, Icon, Menu } from 'semantic-ui-react'
+import { Button, Grid, GridColumn, GridRow, Icon, Menu } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default class MenuExampleBasic extends Component {
@@ -12,20 +12,14 @@ export default class MenuExampleBasic extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu className='navigation' style={{borderRadius: '0px', justifyContent: 'right', backgroundColor: '#305E74'}}>
-
-      <Button className='icon' style={{color:'#DBC8B6', position: 'absolute', left: '0', paddingTop:'8px', marginLeft: '40px',
-       background: 'none', opacity: '100' }} target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/madelinea/'>
-        <Icon class='link' enabled name='linkedin' size='large'/></Button>
-      <Button className='icon' style={{color:'#DBC8B6', position: 'absolute', left: '0', paddingTop:'8px', marginLeft: '70px',
-       background: 'none', opacity: '100' }} target="_blank" rel="noreferrer" href='https://github.com/madelines-code'>
-         <Icon class='link' enabled name='github' size='large' /></Button>
+      <Menu stackable borderless className='navigation' style={{borderRadius: '0px', backgroundColor: '#305E74'}}>
            <Menu.Item
           as={Link} to="/home#about="
           name='home'
           active={activeItem === 'home'}
           onClick={this.handleItemClick}
           style={{color: '#DBC8B6'}}
+          className='navButton'
         >
           Home
         </Menu.Item>
@@ -35,6 +29,7 @@ export default class MenuExampleBasic extends Component {
           active={activeItem === 'devprojects'}
           onClick={this.handleItemClick}
           style={{color: '#DBC8B6'}}
+          className='navButton'
         >
           Dev Projects
         </Menu.Item>
@@ -44,6 +39,7 @@ export default class MenuExampleBasic extends Component {
           active={activeItem === 'portfolio'}
           onClick={this.handleItemClick}
           style={{color: '#DBC8B6'}}
+          className='navButton'
         >
           Portfolio
         </Menu.Item>
@@ -52,11 +48,18 @@ export default class MenuExampleBasic extends Component {
           name='resume'
           active={activeItem === 'resume'}
           onClick={this.handleItemClick}
-          style={{color: '#DBC8B6', marginRight: '4rem'}}
+          style={{color: '#DBC8B6'}}
+          className='navButton'
+
         >
           Resume
         </Menu.Item>
-     
+        <Menu.Menu position='right'>
+      <Menu.Item className='navButton' style={{color:'#DBC8B6',  paddingTop:'8px', paddingRight: '0', opacity: '100' }} target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/madelinea/'>
+        <Icon class='link' enabled name='linkedin' size='large'/></Menu.Item>
+      <Menu.Item className='navButton' style={{color:'#DBC8B6', paddingTop:'8px', opacity: '100'}} target="_blank" rel="noreferrer" href='https://github.com/madelines-code'>
+         <Icon class='link' enabled name='github' size='large' /></Menu.Item>
+         </Menu.Menu>
       </Menu>
     )
   }

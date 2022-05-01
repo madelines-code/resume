@@ -36,7 +36,7 @@ const Home = () => {
       </div>
   
     <div data-aos="fade" className='designPortfolioContainer' id='portfolio'>
-      <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 40px 0px', margin: 'auto'}}>Design Portfolio</h2>
+      <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 40px 0px'}}>Design Portfolio</h2>
       <Portfolio/>
     </div>
     <div className='resumeContainer' id='resume'>
