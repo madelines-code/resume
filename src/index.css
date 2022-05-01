@@ -506,9 +506,10 @@ code {
   /* margin: 5px; */
 }
 
-@media only screen and (max-width: 700px) {.jobsSlider {
+@media only screen and (max-width: 400px) {.jobsSlider {
   margin-left: 10%;
-  margin-right: 10%
+  margin-right: 10%;
+  min-height: 450px !important;
 }}
 @media only screen and (max-width: 1200px) {.jobsSlider {
   min-height: 400px;
