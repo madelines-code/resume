@@ -145,7 +145,7 @@ code {
 .designPortfolioContainer {
   /* height: 100%; */
   color: #DBC8B6;
-  margin: 0px 95px;
+  /* margin: 0px 95px; */
   min-width: 300px;
   padding: 40px 0px;
   display: flex;
@@ -154,11 +154,12 @@ code {
   justify-content: center;
   align-items: center;
   align-content: center;
-  flex-shrink: 4;
+  /* flex-shrink: 4; */
 }
 
-@media only screen and (max-width: 2000px) {.designPortfolioContainer {
-  margin: 0px 50px;
+@media only screen and (max-width: 1500px) {.designPortfolioContainer {
+  /* margin: 0px 50px; */
+  min-width: 100vw;
 }}
 
 .designImgContainer {
@@ -174,6 +175,7 @@ code {
 
 @media only screen and (max-width: 1400px) {.designImgContainer {
   max-width: 450px;
+  min-width: 50px;
   margin: 10px 10px 10px 10px;
 }}
 
@@ -378,6 +380,9 @@ code {
   text-align: center;
   /* min-height: 100vh; */
 }
+@media only screen and (max-width: 700px) {.jobScrollArea {
+  min-width: 50px;
+}}
 
 .resume {
   height: 100vh;
@@ -417,13 +422,35 @@ code {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 400px) {.jobDots {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #DBC8B6;
+  margin-right: 10px;
+}}
+
+
+
+@media only screen and (max-width: 400px) {.act, .jobDots:hover {
+  background-color: #D28068;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}}
+
 .border {
   padding: 10px 10px 0px 10px;
   width: 170px;
   margin-right: 10px; 
   text-align: left;
 }
-
+@media only screen and (max-width: 400px) {.border {
+  padding: 10px 10px 10px 10px;
+  width: fit-content;
+  margin-right: 5px; 
+  text-align: left;
+}}
 .act .jobDots{
   /* padding-bottom: 5px; */
   border-bottom: 2px solid #D28068;
@@ -432,6 +459,10 @@ code {
 .bg, .border:hover{
   background-color: rgba(14, 51, 80, 0.3);
 }
+
+@media only screen and (max-width: 400px) {.bg, .border:hover{
+  background-color: transparent;
+}}
 
 
 .jobDotsBox {

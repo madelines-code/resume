@@ -3,10 +3,14 @@ import { Image } from 'semantic-ui-react'
 import Arrowbullets from './bullets.svg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import useWindowSize from './useWindowSize';
+
 
 const ResumeSlider = () => {
   const [id, setId] = useState(1)
   const [dotClass, setDotClass] = useState('dot1')
+  const size = useWindowSize();
+
 
   useEffect(()=> {
     AOS.init({duration: 3000});
@@ -85,12 +89,20 @@ return (
   <div data-aos="fade" >
     <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 40px 0px', margin: 'auto'}}>Where I've Worked</h2>
     <div className='jobScrollArea'>
+      {size.width > 400 && 
       <div className='jobDotsBox'>
       <div className={dotClass === 'dot1' ? 'act border bg' : 'border'}><p className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}>DEVPOINT</p></div>
       <div className={dotClass === 'dot2' ? 'act border bg' : 'border'}><p className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}>FREELANCE</p></div>
       <div className={dotClass === 'dot3' ? 'act border bg' : 'border'}><p className={dotClass === 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}>GREENVILLE COUNTY</p></div>
       <div className={dotClass === 'dot4' ? 'act border bg' : 'border'}><p className={dotClass === 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}>RED CROSS</p></div>
-      </div>
+      </div>}
+      {size.width < 400 && 
+      <div className='jobDotsBox'>
+      <div className={dotClass === 'dot1' ? 'act border bg' : 'border'}><p className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}></p></div>
+      <div className={dotClass === 'dot2' ? 'act border bg' : 'border'}><p className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}></p></div>
+      <div className={dotClass === 'dot3' ? 'act border bg' : 'border'}><p className={dotClass === 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}></p></div>
+      <div className={dotClass === 'dot4' ? 'act border bg' : 'border'}><p className={dotClass === 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}></p></div>
+      </div>}
       {renderSlider(id)}
       </div>
     </div>

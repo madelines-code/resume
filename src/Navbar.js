@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Icon, Menu } from 'semantic-ui-react'
 import { HashLink as Link } from 'react-router-hash-link';
-
 export default class MenuExampleBasic extends Component {
   state = {}
 
@@ -49,7 +48,6 @@ export default class MenuExampleBasic extends Component {
           onClick={this.handleItemClick}
           style={{color: '#DBC8B6'}}
           className='navButton'
-
         >
           Resume
         </Menu.Item>

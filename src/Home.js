@@ -16,13 +16,9 @@ const Home = () => {
   <div className='homepage'>
     <div data-aos="fade" className='homeHeader'>
         <h1 className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '6vh', margin: '0px'}}>Madeline Armstrong</h1>
-        <h3 className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '3vh', margin: '5px 0px 0px 0px'}} >Full-Stack Developer</h3>
-        <h4 className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '4vh', margin: '5px 0px 5px 0px'}} >Oh, the possibilities</h4>
+        <h3 className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '3vh', margin: '8px 0px 0px 0px'}} >Full-Stack Developer</h3>
         <div className= 'homeHeaderP'>
-        <p className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1.3em', fontSize: '1.2em'}}>Breaking into tech is my way of changing the landscape of life. 
-        More efficient, simply designed, and aesthetically peaceful tools will exist because
-        of me. In 11 weeks, I have learned to build web applications using full stack deveoplment.
-        I look forward to seeing what I'll do with next 11 years, and who will join me.
+        <p className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1.3em', fontSize: '1.2em', paddingTop: '8px'}}>Seeking to create more efficient, simply designed, and aesthetically peaceful tools.
         </p>
         </div>
         <a href = "mailto: armstrong.madeline@gmail.com" target="_blank" rel="noreferrer"><button className='contactButton' >Email Me</button></a>
