@@ -390,6 +390,7 @@ code {
   /* margin: 95px 0px; */
   min-height: 300px;
   display: flex;
+  flex-shrink: 2;
   justify-content: center;
   flex-direction: column;
   background-size: cover;
