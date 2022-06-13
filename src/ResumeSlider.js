@@ -39,7 +39,7 @@ const ResumeSlider = () => {
     company: "COUNTY OF GREENVILLE",
     dates: "AUG 2014 - MAY 2021",
     location: "Greenville, SC",
-    description: ["Planned and executed communication strategy and brand identity for the most populous county in South Carolina, Greenville County.", "Produces websites for private organizations using Wordpress.", "Maintained websites for Greenville County Rec and Animal Care (approx. 180K monthly visitors).", 
+    description: ["Planned and executed communication strategy and brand identity for the most populous county in South Carolina, Greenville County.", "Maintained websites for Greenville County Rec and Animal Care (approx. 180K monthly visitors).", 
   "Produced content and managed social media accounts with more than 100K followers.", "Designed and wrote content for digital and print graphics, newsletters, emails (42K subscribers) and blogs for the general public and stakeholders."]
   },
   {

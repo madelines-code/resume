@@ -14,7 +14,7 @@ const Home = () => {
   return (
 
   <div className='homepage'>
-    <div data-aos="fade" className='homeHeader'>
+    <div data-aos="fade" className='homeHeader' id='about'>
         <h1 className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '6vh', margin: '0px'}}>Madeline Armstrong</h1>
         <h3 className='headerDesc' style={{fontFamily: 'Urbanist', lineHeight: '1em', fontSize: '3vh', margin: '8px 0px 0px 0px'}} >Full-Stack Developer</h3>
         <div className= 'homeHeaderP'>
