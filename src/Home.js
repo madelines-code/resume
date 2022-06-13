@@ -4,7 +4,7 @@ import Portfolio from './Portfolio';
 import DevProjects from './DevProjects';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Footer from './Footer';
 
 const Home = () => {
   useEffect(()=> {
@@ -38,6 +38,7 @@ const Home = () => {
     <div className='resumeContainer' id='resume'>
       <ResumeSlider/>
       </div>
+      <Footer/>
     </div>
 
   )

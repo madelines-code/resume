@@ -2,7 +2,7 @@ import './App.css';
 // import { createMedia } from "@artsy/fresnel";
 import NavbarOld from './NavbarOld';
 import Home from './Home';
-import Footer from './Footer';
+
 // import { HashLink as Link } from 'react-router-hash-link';
 // // import { Icon } from 'semantic-ui-react';
 
@@ -74,7 +74,7 @@ function App() {
     {/* <Navbar leftItems={leftItems}/> */}
     <NavbarOld/>
     <Home/>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
     {/* </MediaContextProvider> */}
 </>
