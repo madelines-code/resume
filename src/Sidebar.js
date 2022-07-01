@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
 import { Icon} from 'semantic-ui-react'
 import { SlideBars } from './SlideBars'
 import { HashLink as Link} from 'react-router-hash-link';
