@@ -8,13 +8,6 @@ import { useState } from "react";
 
 function App() {
   const size = useWindowSize();
-  const [toggle, setToggle] = useState(false);
-
-  const toggleMenu = () =>
-  {
-    setToggle(!toggle);
-  }
-
 
   return (
 
