@@ -126,7 +126,8 @@ ul {
 }
 
 .navText a:hover {
-  background-color: #305E74;
+  background-color: #142933;
+  color:#D28068 !important; 
 }
 
 .navMenuItems {
@@ -283,6 +284,10 @@ ul {
   width: 100%;
   align-items: flex-start;
   align-content: flex-start;
+}
+
+#favicon {
+  color: red;
 }
 
 .devProjectsContainer {

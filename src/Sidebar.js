@@ -30,10 +30,18 @@ const Sidebar = (props) => {
     {SlideBars.map((item, index) => {
       return (
         <li key={index} className={item.cName}>
-          <Link style={{color: '#DBC8B6'}}to={item.path}>{item.icon}<span>{item.title}</span></Link>
+          <Link style={{color: '#DBC8B6'}} to={item.path}>{item.icon}<span className='icon'>{item.title}</span></Link>
           </li>
       )
     })}
+    <li className='navText' >
+    <a style={{color:'#DBC8B6'}} target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/madelinea/'>
+        <Icon class='link' enabled name='linkedin' size='large'/></a>
+    </li>
+    <li className='navText' >
+    <a style={{color:'#DBC8B6'}} target="_blank" rel="noreferrer" href='https://github.com/madelines-code'>
+         <Icon class='link' enabled name='github' size='large' /></a>
+    </li>
   </ul>
 </nav>
 </IconContext.Provider>

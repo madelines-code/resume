@@ -24,18 +24,7 @@ export const SlideBars = [
     path: '/home#resume',
     cName: 'navText'
   },
-  {
-    title: '',
-    path: 'https://www.linkedin.com/in/madelinea/',
-    icon: <Icon class='link' enabled name='linkedin' size='large'/>,
-    cName: 'navText iconSidebar'
-  },
-  {
-    title: '',
-    path: '/',
-    icon: <Icon class="link" enabled name="github" size="large" />,
-    cName: 'navText iconSidebar'
-  },
+
 
  
 ]
