@@ -1,6 +1,6 @@
 import { createMedia } from "@artsy/fresnel";
 import React, { Component } from "react";
-import { Icon, Menu, Sidebar, Image, Container } from "semantic-ui-react";
+import { Icon, Menu, Sidebar, Image, Container, Segment } from "semantic-ui-react";
 
 const AppMedia = createMedia({
   breakpoints: {
@@ -18,7 +18,7 @@ const NavBarMobile = (props) => {
   const { children, leftItems, onPusherClick, onToggle, visible } = props;
 
   return (
-    <Sidebar.Pushable>
+    <Sidebar.Pushable as={Segment}>
       <Sidebar
         as={Menu}
         animation="overlay"

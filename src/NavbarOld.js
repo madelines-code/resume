@@ -5,14 +5,14 @@ export default class MenuExampleBasic extends Component {
   state = {}
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
+  
   render() {
     const { activeItem } = this.state
 
     return (
-      <Menu stackable borderless className='navigation' style={{borderRadius: '0px', backgroundColor: '#305E74'}}>
-           <Menu.Item
-          as={Link} to="/home#about="
+      <Menu borderless className='navigation' style={{borderRadius: '0px', backgroundColor: 'hsl(199, 43%, 21%)'}}>
+             <Menu.Item
+          as={Link} to="/home#devprojects"
           name='home'
           active={activeItem === 'home'}
           onClick={this.handleItemClick}
@@ -58,6 +58,7 @@ export default class MenuExampleBasic extends Component {
          <Icon class='link' enabled name='github' size='large' /></Menu.Item>
          </Menu.Menu>
       </Menu>
+      
     )
   }
 }
