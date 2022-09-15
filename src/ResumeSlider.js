@@ -91,8 +91,8 @@ return (
     <div className='jobScrollArea'>
       {size.width > 400 && 
       <div className='jobDotsBox'>
-      <div className={dotClass === 'dot1' ? 'act border bg' : 'border'}><p className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}>DEVPOINT</p></div>
-      <div className={dotClass === 'dot2' ? 'act border bg' : 'border'}><p className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}>FREELANCE</p></div>
+      <div className={dotClass === 'dot1' ? 'act border bg' : 'border'}><p className={dotClass === 'dot1' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(1)}>FREELANCE</p></div>
+      <div className={dotClass === 'dot2' ? 'act border bg' : 'border'}><p className={dotClass === 'dot2' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(2)}>DEVPOINT</p></div>
       <div className={dotClass === 'dot3' ? 'act border bg' : 'border'}><p className={dotClass === 'dot3' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(3)}>GREENVILLE COUNTY</p></div>
       <div className={dotClass === 'dot4' ? 'act border bg' : 'border'}><p className={dotClass === 'dot4' ? 'act jobDots' : 'jobDots'} onClick={()=>activeClass(4)}>RED CROSS</p></div>
       </div>}
