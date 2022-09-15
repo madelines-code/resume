@@ -23,7 +23,7 @@
         </div>
         <div className='textArea'>
           <h4>Park Hop</h4>
-          <p>This web application, being built for the Greenville County Parks & Rec Dept., brings a summer-long scavenger hunt online in an easy to use format. </p>
+          <p>This web application, being built (work in progress) for the Greenville County Parks & Rec Dept., brings a summer-long scavenger hunt online in an easy to use format. </p>
           <p><strong>Tools:</strong> REACT, SQL, Ruby on Rails, Javasript, CSS, HTML, Trello, Figma, Github, Semantic UI, & VS Code.</p>
           <p><strong>Responsible for: </strong> entire application</p>
         </div>
