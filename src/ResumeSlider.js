@@ -19,19 +19,19 @@ const ResumeSlider = () => {
   const pastJobs = [
     {
       id: 1,
+      title: "Self-Employed",
+      company: "FREELANCE MARKETING",
+      dates: "MAY 2021 - CURRENT",
+      location: "Various Locations",
+      description: ["Collaborate with clients to develop UI/UX optimized Wordpress websites.", "Designs digital marketing material (emails, logos, graphics) for clients."]
+    },
+    {
+      id: 2,
       title: "Full-Time Student",
       company: "DEVPOINT LABS",
       dates: "NOV 2021 - FEB 2022",
       location: "Salt Lake City, UT",
       description: ["Built CRUD websites using Ruby on Rails and React.", "Designed UI/UX optimized websites and apps using wireframes, data maps, Ruby, Javascrpt, JQuery, HTML, CSS, Semantic UI and Material UI.", "Interacted with databases using SQL.", "Built web applications on teams using Agile workflow."]
-  },
-  {
-    id: 2,
-    title: "Self-Employed",
-    company: "FREELANCE MARKETING",
-    dates: "MAY 2021 - CURRENT",
-    location: "Various Locations",
-    description: ["Designs logos and graphics for local government agencies and businesses.", "Produces websites for private organizations using Wordpress."]
   },
   {
     id: 3,
