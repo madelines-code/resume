@@ -23,7 +23,7 @@ const ResumeSlider = () => {
       company: "FREELANCE MARKETING",
       dates: "MAY 2021 - CURRENT",
       location: "Various Locations",
-      description: ["Collaborate with clients to develop UI/UX optimized Wordpress websites.", "Designs digital marketing material (emails, logos, graphics) for clients."]
+      description: ["Collaborates with clients to develop UI/UX optimized Wordpress websites.", "Designs digital marketing material (emails, logos, graphics) for clients."]
     },
     {
       id: 2,
