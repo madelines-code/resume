@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import ResumeSlider from './ResumeSlider';
 import Portfolio from './Portfolio';
-import DevProjects from './DevProjects';
+// import DevProjects from './DevProjects';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Footer';
@@ -24,12 +24,13 @@ const Home = () => {
         <a href = "mailto: armstrong.madeline@gmail.com" target="_blank" rel="noreferrer"><button className='contactButton' >Email Me</button></a>
         </div>
       
-      <div data-aos="fade" className='devProjects' id='devprojects'>
+      {/* <div data-aos="fade" className='devProjects' id='devprojects'>
       <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', margin: '30px 0px 30px 0px', color: 'rgba(55, 104, 129, 0.8)'}}>Development Projects</h2>
       <div className='devProjectsBoxes' style={{minWidth: '350px'}}>
-         <DevProjects/>
-        </div>
-      </div>
+         {/* <DevProjects/> */}
+         {/* <Portfolio/> */}
+        {/* </div> */}
+      {/* </div> */} 
   
     <div data-aos="fade" className='designPortfolioContainer' id='portfolio'>
       <h2 style={{fontFamily: 'Urbanist', fontSize: '4vh', padding: '40px 0px 40px 0px'}}>Design Portfolio</h2>

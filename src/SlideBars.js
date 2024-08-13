@@ -4,11 +4,11 @@ export const SlideBars = [
     path: '/home#about=',
     cName: 'navText'
   },
-  {
-    title: 'Dev Projects',
-    path: '/home#devprojects',
-    cName: 'navText'
-  },
+  // {
+  //   title: 'Dev Projects',
+  //   path: '/home#devprojects',
+  //   cName: 'navText'
+  // },
   {
     title: 'Portfolio',
     path: '/home#portfolio',

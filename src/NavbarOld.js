@@ -21,7 +21,7 @@ export default class MenuExampleBasic extends Component {
         >
           Home
         </Menu.Item>
-        <Menu.Item
+        {/* <Menu.Item
           as={Link} to="/home#devprojects"
           name='devprojects'
           active={activeItem === 'devprojects'}
@@ -30,7 +30,7 @@ export default class MenuExampleBasic extends Component {
           className='navButton'
         >
           Dev Projects
-        </Menu.Item>
+        </Menu.Item> */}
         <Menu.Item
           as={Link} to="/home#portfolio"
           name='portfolio'
